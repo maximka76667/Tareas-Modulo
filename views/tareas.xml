@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_accion_tareas" model="ir.ui.view">
+            <field name="name">Todas las tareas</field>
+            <field name="model">tarea</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombre" />
+                    <field name="hecha" />
+                    <field name="activa" />
+                </tree>
+            </field>
+        </record>
+
+        <act_window id="accion_tareas" name="Tareas" res_model="tarea" view_model=""
